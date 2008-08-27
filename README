@@ -189,6 +189,9 @@ mimetype = "image/jpeg"
 attachement_fu view helpers
 ====================================
 
+This will automatically generate an html tag that includes width and height so your
+pages are prerendered correctly
+
 def asset_tag(asset, options = {})
   img_size = options[:size] || :thumb
   if asset.width and asset.height
